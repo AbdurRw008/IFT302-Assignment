@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>251484 — Portfolio</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #222;
+    background: #ffffff;
+    line-height: 1.6;
+  }
+
+  header {
+    background: #2b3a55;
+    color: #fff;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  header .logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.95rem;
+  }
+
+  header nav a:hover {
+    text-decoration: underline;
+  }
+
+  .hero {
+    background: #3d5170;
+    color: #fff;
+    text-align: center;
+    padding: 70px 24px;
+  }
+
+  .hero h1 {
+    font-size: 2.3rem;
+    margin-bottom: 12px;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+    max-width: 500px;
+    margin: 0 auto;
+    color: #dbe2ee;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 24px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    color: #2b3a55;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #3d5170;
+    display: inline-block;
+    padding-bottom: 4px;
+  }
+
+  .about p {
+    max-width: 650px;
+  }
+
+  .project {
+    background: #f4f6f9;
+    border-left: 4px solid #3d5170;
+    padding: 18px 20px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+  }
+
+  .project h3 {
+    color: #2b3a55;
+    margin-bottom: 6px;
+  }
+
+  .project p {
+    color: #444;
+    font-size: 0.95rem;
+  }
+
+  .skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .skills-list li {
+    background: #3d5170;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
+
+  .contact a {
+    display: block;
+    color: #2b3a55;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 8px;
+  }
+
+  .contact a:hover {
+    text-decoration: underline;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #2b3a55;
+    color: #cfd6e2;
+    font-size: 0.85rem;
+  }
+
+  section {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 40px;
+  }
+
+  /* Back to top button - hidden by default, shown via JavaScript */
+  #backToTop {
+    display: none;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: #3d5170;
+    color: #fff;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+
+  #backToTop:hover {
+    background: #2b3a55;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">AbdulAwwal AbdurRahman</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>Hi, I am AbdurRahman</h1>
+  <p>A Computer Science student diving into cybersecurity(blue team), always curious and learning something new.</p>
+</div>
+
+<div class="container">
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about">
+      <p>I'm a Computer Science student with an interest in cybersecurity, mainly on the blue team side — defense, detection, and understanding how systems get compromised so I can help stop it. I'm still actively learning, and that's the part I enjoy most.</p>
+      <p>I code in Python and Java, and I'm comfortable with HTML and CSS. I'm also picking up Linux. Outside of code, I'm a curious person who loves reading and learning in general — if it's new, I probably want to know more about it.</p>
+    </div>
+  </section>
+
+  <br>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>ATM Simulator(Python)</h3>
+      <p>A command-line ATM system built in Python that lets a user deposit money, withdraw money, and check their account balance. Focused on handling user input safely and keeping balance logic accurate.</p>
+    </div>
+
+    <div class="project">
+      <h3>Home Security Lab</h3>
+      <p>Set up a personal lab using Kali Linux and Metasploitable on virtual machines, with Wireshark for network traffic analysis. Used it to practise packet inspection and get hands-on with common cybersecurity tools.</p>
+    </div>
+
+    <div class="project">
+      <h3>Bubble Sort Algorithm(Java)</h3>
+      <p>Implemented the bubble sort algorithm in Java as part of a class project, sorting a list of values by repeatedly comparing and swapping adjacent elements until the list is in order.</p>
+    </div>
+  </section>
+
+  <br>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>Python</li>
+      <li>Java</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Linux</li>
+      <li>Cybersecurity — Blue Team</li>
+      <li>Problem Solving</li>
+      <li>Writing and Research</li>
+    </ul>
+  </section>
+
+  <br>
+
+  <section id="contact" style="border-bottom: none;">
+    <h2>Contact</h2>
+    <div class="contact">
+      <a href="mailto:abdurrahmanawwal18@gmail.com">📧 abdurrahmanawwal18@gmail.com</a>
+      <a href="https://github.com/AbdurRw008" target="_blank">💻 github.com/AbdurRw008</a>
+      <a href="https://linkedin.com/in/abdurw18" target="_blank">🔗 linkedin.com/in/abdurw18</a>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  &copy; 2026 AbdulAwwal AbdurRahman. Built with HTML, CSS &amp; JavaScript.
+</footer>
+
+<button id="backToTop" title="Back to top">↑</button>
+
+<script>
+  // Grab the back-to-top button
+  const backToTopBtn = document.getElementById("backToTop");
+
+  // Show the button only after scrolling down a bit
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 400) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  });
+
+  // Scroll smoothly back to the top when the button is clicked
+  backToTopBtn.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+
+</body>
+</html>
